@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap
 import kotlin.concurrent.thread
 
 data class Order(val id: Int, var status: String, val userId: Int)
-data class OrderDetail(val orderId: Int, val dishId: Int, var quantity: Int, var status: String)//
+data class OrderDetail(val orderId: Int, val dishId: Int, var quantity: Int, var status: String)///
 
 object OrderManager {
     private val orders = ConcurrentHashMap<Int, Order>()
